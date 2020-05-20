@@ -1,0 +1,10 @@
+{
+  "loginMotorista": {
+    "motorista": "Motorista",
+    "entrar": "Entrar",
+    "email": "E-mail:",
+    "senha": "Senha:",
+    "error": "Login ou senha incorreto.",
+    "success": "Logado com sucesso!"
+  }
+}

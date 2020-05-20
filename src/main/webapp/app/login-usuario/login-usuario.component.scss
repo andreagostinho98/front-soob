@@ -1,0 +1,152 @@
+.display-flex {
+  display: flex !important;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.fundo-cinza {
+  background-color: #f6f6f6;
+}
+
+.title {
+  color: #00e091;
+}
+
+.input-cadastro {
+  border-radius: 10px;
+  border: none;
+  -webkit-text-fill-color: black;
+}
+
+.font-black {
+  color: black;
+}
+
+.btn-enviar {
+  background-color: #00e091 !important;
+  border: none !important;
+  padding: 5px !important;
+  font-size: 16px;
+  width: 30%;
+}
+
+@media (min-width: 300px) {
+  .alinha-cadastro {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .alinha-cadastro {
+    padding-left: 2.5rem;
+  }
+}
+
+@media (min-width: 300px) {
+  .alinha-btn {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .alinha-btn {
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .cadastro-user {
+    padding-left: 3rem;
+  }
+}
+
+.pt-5-percent {
+  padding-top: 5%;
+}
+
+.btn-facebook {
+  background-color: #1c29e0 !important;
+  border: none !important;
+  padding: 5px !important;
+  font-size: 16px;
+  height: 135%;
+  text-align-last: center;
+}
+
+.btn-google {
+  background-color: #ffffff !important;
+  border: none !important;
+  padding: 5px !important;
+  font-size: 16px;
+  color: black;
+  height: 135%;
+  text-align-last: center;
+}
+
+@media (min-width: 300px) {
+  .tamanho-btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 500px) {
+  .tamanho-btn {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .tamanho-btn {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .tamanho-btn {
+    width: 70%;
+  }
+}
+
+.center {
+  text-align-last: center;
+}
+
+.widith-50 {
+  width: 50%;
+  text-align-last: center;
+}
+
+.error {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.icon-facebook {
+  width: 5%;
+  background-color: white;
+  margin-right: -9%;
+  position: relative;
+}
+
+.icon-gmail {
+  width: 5%;
+  background-color: white;
+  margin-right: -9%;
+  position: relative;
+}
+
+@media (min-width: 300px) {
+  .centraliza-btn {
+    text-align-last: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .centraliza-btn {
+    text-align-last: left;
+  }
+}

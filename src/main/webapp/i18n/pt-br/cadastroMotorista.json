@@ -1,0 +1,19 @@
+{
+  "cadastroMotorista": {
+    "motorista": "Motorista",
+    "cadastraSe": "Cadastre-se",
+    "selecione": "Selecione:",
+    "autonomo": "Autônomo",
+    "empresa": "Empresa",
+    "nomeEmpresa": "Nome da Empresa (fantasia):",
+    "cnpj": "CNPJ/ CPF:",
+    "facebook": "Digite seu site ou facebook da empresa:",
+    "celular": "Celular (WhatsApp):",
+    "cep": "CEP:",
+    "email": "E-mail:",
+    "crieSenha": "Crie uma senha:",
+    "confirmeSenha": "Confirme a senha:",
+    "termos": "Aceito os Termos e condições do uso da Plataforma",
+    "senhaError": "Senhas incompatíveis."
+  }
+}

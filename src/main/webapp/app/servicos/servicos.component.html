@@ -1,0 +1,131 @@
+<div class="row mt-5">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 ajuste-widith-12 mb-3 mt-3">
+        <h3 class="font-alegreya-sans-bold pl-5 verdeagua" jhiTranslate="servicos.title">Quais os serviços oferecidos?</h3>
+    </div>
+</div>
+
+<div class="row h-100-l h-100 display-flex">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 ajuste-widith-12 flex-row">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-3 ajuste-widith-2 mt-4 text-center">
+                <img src="/content/images/soob-servico-01.png" alt="" class="pointer" (click)="open(modalFretes)">
+                <h4 class="font-poppins-light" jhiTranslate="servicos.fretes">Fretes em geral</h4>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-3 ajuste-widith-2 mt-4 text-center">
+                <img src="/content/images/soob-servico-02.png" alt="" class="pointer" (click)="open(modalPequenasMudancas)"/>
+                <h4 class="font-poppins-light" jhiTranslate="servicos.mudancasPequenas">Pequenas mudanças</h4>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-3 ajuste-widith-2 mt-4 text-center">
+                <img src="/content/images/soob-servico-03.png" alt="" class="pointer" (click)="open(modalCorporativa)"/>
+                <h4 class="font-poppins-light" jhiTranslate="servicos.mudancasCorporativa">Mudança corporativa</h4>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-3 ajuste-widith-2 mt-4 text-center">
+                <img src="/content/images/soob-servico-04.png" alt="" class="pointer" (click)="open(modalResidencial)"/>
+                <h4 class="font-poppins-light" jhiTranslate="servicos.mudancasResidencial">Mudança residencial</h4>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-3 ajuste-widith-2 mt-4 text-center">
+                <img src="/content/images/soob-servico-05.png" alt="" class="pointer" (click)="open(modalGuincho)"/>
+                <h4 class="font-poppins-light" jhiTranslate="servicos.guicho">Guincho (motocicleta)</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 ajuste-widith-12 mb-3 mt-3 aling-last">
+        <button class="btn-primary font-poppins-bold btn-experimente border-none" jhiTranslate="servicos.btExp">Experimente</button>
+    </div>
+</div>
+
+<ng-template #modalFretes let-modal class="row">
+    <div class="right back-verdeagua">
+        <button type="submit" class="font-poppins-bold botao-x position-relative max-widith-10 back-verdeagua border-none" (click)="close()">X</button>
+    </div>
+    <div class="col-12 back-verdeagua display-flex">
+        <div class="flex-row pl-5 pr-5 pb-5 text-center-aling">
+            <h4 class="font-white font-poppins-bold mb-3" jhiTranslate="servicos.fretes"></h4>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalFrestes1"></span>
+            <span class="font-poppins-light" jhiTranslate="servicos.modalFrestes2"></span>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalFrestes3"></span>
+            <span class="font-poppins-light" jhiTranslate="servicos.modalFrestes4"></span>
+            <span class="font-white font-poppins-light paragraph" jhiTranslate="servicos.modalFrestes5"></span>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #modalPequenasMudancas let-modal class="row">
+    <div class="right back-verdeagua">
+        <button type="submit" class="font-poppins-bold botao-x position-relative max-widith-10 back-verdeagua border-none" (click)="close()">X</button>
+    </div>
+    <div class="col-12 back-verdeagua display-flex">
+        <div class="flex-row pl-5 pr-5 pb-5 text-center-aling">
+            <h4 class="font-white font-poppins-bold mb-3" jhiTranslate="servicos.mudancasPequenas"></h4>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalPequenasMudancas"></span>
+            <span class="font-poppins-light" jhiTranslate="servicos.modalPequenasMudancas1"></span>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalPequenasMudancas2"></span>
+            <span class="font-poppins-light" jhiTranslate="servicos.modalPequenasMudancas3"></span>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalPequenasMudancas4"></span>
+            <span class="font-white font-poppins-light paragraph" jhiTranslate="servicos.modalPequenasMudancas5"></span>
+            <span class="font-poppins-light" jhiTranslate="servicos.modalPequenasMudancas6"></span>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalPequenasMudancas7"></span>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #modalCorporativa let-modal class="row">
+    <div class="right back-verdeagua">
+        <button type="submit" class="font-poppins-bold botao-x position-relative max-widith-10 back-verdeagua border-none" (click)="close()">X</button>
+    </div>
+    <div class="col-12 back-verdeagua display-flex">
+        <div class="flex-row pl-5 pr-5 pb-5 text-center-aling">
+            <h4 class="font-white font-poppins-bold mb-3" jhiTranslate="servicos.mudancasCorporativa"></h4>
+            <span class="font-poppins-light" jhiTranslate="servicos.modalCorporativa1"></span>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalCorporativa2"></span>
+            <span class="font-white font-poppins-light paragraph" jhiTranslate="servicos.modalCorporativa3"></span>
+            <span class="font-poppins-light" jhiTranslate="servicos.modalCorporativa4"></span>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalCorporativa5"></span>
+            <span class="font-poppins-light" jhiTranslate="servicos.modalCorporativa6"></span>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalCorporativa7"></span>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #modalResidencial let-modal class="row">
+    <div class="right back-verdeagua">
+        <button type="submit" class="font-poppins-bold botao-x position-relative max-widith-10 back-verdeagua border-none" (click)="close()">X</button>
+    </div>
+    <div class="col-12 back-verdeagua display-flex">
+        <div class="flex-row pl-5 pr-5 pb-5 text-center-aling">
+            <h4 class="font-white font-poppins-bold mb-3" jhiTranslate="servicos.mudancasResidencial"></h4>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalResidencial1"></span>
+            <span class="font-poppins-light" jhiTranslate="servicos.modalResidencial2"></span>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalResidencial3"></span>
+            <span class="font-poppins-light" jhiTranslate="servicos.modalResidencial4"></span>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalResidencial5"></span>
+            <span class="font-poppins-light" jhiTranslate="servicos.modalResidencial6"></span>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalResidencial7"></span>
+        </div>
+    </div>
+</ng-template>
+
+
+<ng-template #modalGuincho let-modal class="row">
+    <div class="right back-verdeagua">
+        <button type="submit" class="font-poppins-bold botao-x position-relative max-widith-10 back-verdeagua border-none" (click)="close()">X</button>
+    </div>
+    <div class="col-12 back-verdeagua display-flex">
+        <div class="flex-row pl-5 pr-5 pb-5 text-center-aling">
+            <h4 class="font-white font-poppins-bold mb-3" jhiTranslate="servicos.modalGuincho"></h4>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalGuincho1"></span>
+            <span class="font-poppins-light" jhiTranslate="servicos.modalGuincho2"></span>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalGuincho3"></span>
+            <span class="font-white font-poppins-light paragraph" jhiTranslate="servicos.modalGuincho4"></span>
+            <span class="font-poppins-light" jhiTranslate="servicos.modalGuincho5"></span>
+            <span class="font-white font-poppins-light" jhiTranslate="servicos.modalGuincho6"></span>
+        </div>
+    </div>
+</ng-template>

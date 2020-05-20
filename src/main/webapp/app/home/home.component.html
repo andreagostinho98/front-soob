@@ -1,0 +1,149 @@
+<ng-template #mymodalTermos let-modal class="row">
+ <div class="col-12 background-cinza display-flex">
+        <embed src="/content/termos.pdf" type="application/pdf" width="100%" height="600px" />
+    </div>
+</ng-template>
+
+
+
+<ng-template #mymodal let-modal class="row">
+    <div class="col-12 background-cinza display-flex">
+        <div class="flex-row alingModal margin-bottom-5-percent margin-top-10-percent">
+            <input class="esconder-input"/> <!--FOI adicionado esse input para fazer com que o proximo nao entrasse com focus-->
+            <div>
+                <h4 (focusin)="true" id="titleModal" class="font-poppins-medium" jhiTranslate="home.modal.title">Queremos sim levar as suas coisa</h4>
+            </div>
+            <div class="input-group max-widith-70 margin-top-15-percent ui-inputtext">
+                <p-inputMask id="modalPesquisar" class="form-control margin-top-1-percent input-telefone font-poppins-medium font-bold" mask="(99) 99999-9999"
+                             placeholder="{{'home.modal.digiteNumero' | translate}}" [(ngModel)]="whatsApp" required></p-inputMask>
+                <div class="input-group-prepend">
+                        <span class="icon-whats float-right" id="basic-addon3">
+                            <img src="/content/images/whats.png" alt="" class="responsive margin-left-12-percent margin-top-10-percent" style="width: 45px;"/>
+                        </span>
+                </div>
+            </div>
+            <div class="max-widith-80">
+                <p class="margin-top-5-percent font-poppins-medium paragraph color-font font-bold" jhiTranslate="home.modal.enviadaMensagem">
+                    Será enviada uma mensagem para o seu número de WhatsApp</p>
+            </div>
+            <div class="margin-top-7-percent">
+                <button type="button" class="btn-secondary btn-enviar border-3 rounded text-center font-poppins-medium" jhiTranslate="home.modal.botaoEnviar"
+                        [disabled]="!whatsApp" (click)="enviarEmail()">Enviar</button>
+            </div>
+            <div class="margin-top-15-percent max-widith-90">
+                <label class="font-poppins-medium font-termos">Ao clicar em enviar, você aceita os<button class="btn" (click)="open(mymodalTermos)"><b>Termos e Condições</b></button>do site  </label>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+
+<section class="row bg-green container-fluid mt-4 pt-2 altura-fundo">
+    <div class="col-12 mt-5">
+        <article class="row">
+            <div class="col-12">
+                <div class="text-center text-white">
+                    <h1 class="font-alegreya-sans-bold size-3rem" jhiTranslate="home.levamosParaVoce">Não se preocupe, a gente leva para você</h1>
+                </div>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-5 ">
+                <img src="/content/images/caixas.png" alt="" class="responsive ml-5"/>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mt-5">
+                <form role="form" class="widith-105">
+                    <div class="col-12 ml-0 mr-0 pl-0 pr-0">
+                        <div class="input-group form-label-group font-poppins-medium">
+                            <input  #deOnde type="text" class="form-control input-map" id="de" placeholder="De onde (endereço completo)"
+                                   aria-label="De onde (endereço completo)" aria-describedby="basic-addon1" (blur)="populaDeOnde(deOnde.value)">
+                            <label class="cinza-claro label-map" jhiTranslate="home.deOnde" for="de">De onde (endereço completo)</label>
+                            <img src="/content/images/map.png" class="icon-map" alt=""/>
+                        </div>
+                    </div>
+
+                    <div class="col-12 ml-0 mr-0 pl-0 pr-0">
+                        <div class="input-group form-label-group font-poppins-medium">
+                            <input #paraOnde type="text" class="form-control input-map" id="para" placeholder="De onde (endereço completo)"
+                                   aria-label="De onde (endereço completo)" aria-describedby="basic-addon1" (blur)="populaParaOnde(paraOnde.value)">
+                            <label class="cinza-claro label-map" jhiTranslate="home.paraOnde" for="para">Para onde (endereço completo)</label>
+                            <img src="/content/images/map.png" class="icon-map" alt=""/>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center   border-0">
+                        <button type="button" class="btn text-center bg-green font-poppins-light" jhiTranslate="home.pontoParada">
+                            Adicionar um ponto de parada</button>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn-danger border-3 rounded text-center font-poppins-medium orangered"
+                                jhiTranslate="home.pesquisar" (click)="open(mymodal)">Pesquisar
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-xl-4"></div>
+        </article>
+        <!--IMAGEM DO PARCELAMENTO-->
+        <article class="row widith-100">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <img src="/content/images/cartao.png" class="float-right parcelamento" alt=""/>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+<section id="comousar" class="mt-5 pb-5">
+    <jhi-como-usar></jhi-como-usar>
+</section>
+
+<section id="servicos" class="mt-5 pb-5">
+    <jhi-servicos></jhi-servicos>
+</section>
+<section class="mt-5 pb-5 text-center">
+    <article class="row mt-5 display-flex" style="background-color: #f6f6f6">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 flex-row">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-1 col-xl-1 widith-0"></div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+                    <img src="/content/images/somossoob.png" alt="" class="responsive mt-2"/>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 text-left pl-4" style="background-color: #f6f6f6">
+                    <h1 style="color: #00e091" class="text-justify font-poppins-medium font-bold mt-2" jhiTranslate="home.terceiraPagina.somosSoob">#SOMOSSOOB</h1>
+                    <p class="font-poppins-light paragraph font-grey" jhiTranslate="home.terceiraPagina.duvidas">Quer tirar dúvidas, mandar sugestões...</p>
+
+                        <span class="font-grey font-poppins-light" jhiTranslate="home.terceiraPagina.email1"></span>
+                        <a class="" jhiTranslate="home.terceiraPagina.email2" href="mailto:atendimento@soob.com?subject=Testing out mailto!">
+                            Mande um e-mail para atendimento@soob.com...</a>
+                        <span class="font-grey font-poppins-light" jhiTranslate="home.terceiraPagina.email3"></span>
+                </div>
+                <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 widith-0"></div>
+            </div>
+
+            <div class="row pr-5">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-1 col-xl-1 widith-0 mt-4"></div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 mt-4">
+                    <div class="text-center">
+                        <a class="font-poppins-light ml-3 mr-2 mr-lg-5" jhiTranslate="home.terceiraPagina.politicas">Politicas</a>
+                        <a class="font-poppins-light ml-2" ><button class="btn btn-link" (click)="open(mymodalTermos)"><b>Termos e Condições</b></button> </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 widith-0 mt-4"></div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 text-center mt-4">
+                    <a href="https://www.facebook.com/www.soob.com.br/?ref=br_rs" target="_blank">
+                        <img src="/content/images/facebook-grey.png" alt="facebook" class="ml-2" style="width: 40px; bottom: 10px;"/>
+                    </a>
+                    <a href="https://www.instagram.com/soob.br/" target="_blank">
+                        <img src="/content/images/instagram-grey.png" alt="instagram" class="ml-2" style="width: 40px;"/>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-1 col-xl-1 widith-0 mt-4"></div>
+            </div>
+        </div>
+    </article>
+</section>

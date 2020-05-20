@@ -1,0 +1,20 @@
+{
+  "motorista": {
+    "title": "Selecione quais regiões você deseja trabalhar:",
+    "opcaoA": "A. Cidade de Florianópolis",
+    "opcaoB": "B. Região Metropolitana de Florianópolis",
+    "opcaoC": "C. Interestadual",
+    "titleB": "Quantos e em quais categorias estão os veículos?",
+    "utilitario": "Utilitário",
+    "pequeno": "Pequeno/Urbano",
+    "medio": "Médio/Furgão",
+    "toco": "Toco",
+    "truck": "Truck",
+    "sporta": "Suporta até:",
+    "carroA": "Peso: 650kg\nAltura: 1,70 m\nComprimento: 1,65 m\nLargura: 1,10 m",
+    "carroB": "Peso: 1,5 toneladas\nAltura: 1,80 m\nComprimento: 3,00 m\nLargura: 1,10 m",
+    "carroC": "Peso: 3 toneladas\nAltura: 2,00m\nComprimento: 4,00 m\nLargura: 2,00 m",
+    "carroD": "Peso: 6 toneladas\nAltura: 2,10 m\nComprimento: 5,50 m\nLargura: 2,20 m",
+    "carroE": "Peso: 10 a 14 toneladas\nAltura: 2,30m\nComprimento: 7,00 m\nLargura: 2,40 m"
+  }
+}

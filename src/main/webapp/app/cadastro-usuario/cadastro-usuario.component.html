@@ -1,0 +1,95 @@
+<div class="row display-flex fundo-cinza mt-3">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 flex-row mt-5 mb-5">
+        <div class="cadastro-user">
+            <h4 class="font-poppins-medium font-bold title alinha-cadastro" jhiTranslate="cadastroUsuario.usuario">Usuario</h4>
+            <div class="row mt-4">
+                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                    <div class="error">
+                        <div class="alert alert-success" *ngIf="success" jhiTranslate="register.messages.success"></div>
+                        <div class="alert alert-danger" *ngIf="error" jhiTranslate="register.messages.error.fail"></div>
+                        <div class="alert alert-danger" *ngIf="errorUserExists" jhiTranslate="register.messages.error.userexists"></div>
+                        <div class="alert alert-danger" *ngIf="errorEmailExists" jhiTranslate="register.messages.error.emailexists"></div>
+                        <div class="alert alert-danger" *ngIf="doNotMatch" jhiTranslate="global.messages.error.dontmatch"></div>
+                    </div>
+                </div>
+            </div>
+            <form name="form" role="form" (ngSubmit)="register()" [formGroup]="registerForm" *ngIf="!success">
+                <div class="row">
+                    <!--Nome-->
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 mt-4">
+                        <input type="text" class="form-control input-cadastro font-poppins-light" id="nome"
+                               placeholder="{{'cadastroUsuario.nome' | translate}}" formControlName="firstName"/>
+                    </div>
+                    <!--Sobrenome-->
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 mt-4">
+                        <input type="text" class="form-control input-cadastro font-poppins-light" id="sobrenome"
+                               placeholder="{{'cadastroUsuario.sobrenome' | translate}}" formControlName="lastName"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!--genero-->
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 mt-4 mb-3-rem-negativo">
+                        <label class="form-control input-cadastro font-poppins-light" id="genero"   jhiTranslate="cadastroUsuario.genero"></label>
+                        <input type="radio" id="masc" name="group1" value="Masculino" class="radio-masculino" (click)="setMasculino()" formControlName="gender">
+                        <label class="label-masculino font-poppins-light" for="masc" jhiTranslate="cadastroUsuario.masculino">masculino</label><br>
+                        <input type="radio" id="fem" name="group1" value="Feminino" class="radio-feminino" (click)="setFeminino()" formControlName="gender">
+                        <label class="label-feminino font-poppins-light" for="fem" jhiTranslate="cadastroUsuario.feminino">feminino</label><br>
+                    </div>
+
+                    <!--data nascimento-->
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 mt-4">
+                        <p-calendar id="dataNascimento" dateFormat="dd/mm/yy" name="dataNascimento" class="form-control  input-cadastro font-poppins-light"
+                                    formControlName="birth" [locale]="calendarLocale" (onFocus)="carregarLocale()" appendTo="body"
+                                    placeholder="{{'cadastroUsuario.dataNascimento' | translate}}"></p-calendar>
+                    </div>
+                </div>
+
+                <!--celular-->
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                        <p-inputMask id="mascaraCelular" class="form-control  input-cadastro font-poppins-light" mask="(99) 99999-9999"
+                                     placeholder="{{'cadastroUsuario.celular' | translate}}" formControlName="cel"></p-inputMask>
+                    </div>
+                </div>
+                <!--email-->
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                        <input type="text" class="form-control input-cadastro font-poppins-light" id="email" formControlName="email"
+                               placeholder="{{'cadastroUsuario.email' | translate}}"/>
+                    </div>
+                </div>
+                <!--senha-->
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                        <input type="password" class="form-control input-cadastro font-poppins-light" id="senha" formControlName="password"
+                               placeholder="{{'cadastroUsuario.crieSenha' | translate}}"/>
+                    </div>
+                </div>
+                <!--confirme senha-->
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                        <input type="password" class="form-control input-cadastro font-poppins-light" id="confirmeSenha" formControlName="confirmPassword"
+                               placeholder="{{'cadastroUsuario.confirmeSenha' | translate}}"/>
+                    </div>
+                </div>
+                <!--Newsletter-->
+                <div class="row mt-4 checkbox-newsletter">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" formControlName="fgNotifications">
+                            <label class="custom-control-label font-poppins-light font-black" for="customCheck1" jhiTranslate="cadastroUsuario.newsletter">Newsletter</label>
+                        </div>
+                    </div>
+                </div>
+                <!--cadastra-se-->
+                <div class="row mt-4 alinha-btn">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                        <button type="submit" class="btn-secondary btn-enviar border-3 rounded text-center font-poppins-medium"
+                                [disabled]="registerForm.invalid" jhiTranslate="cadastroUsuario.cadastraSe">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

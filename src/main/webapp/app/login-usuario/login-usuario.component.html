@@ -1,0 +1,61 @@
+<div class="row display-flex fundo-cinza mt-3">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 flex-row mt-5 mb-5">
+        <h4 class="font-poppins-medium font-bold title text-center" jhiTranslate="login.continuar">Usuario</h4>
+        <div class="cadastro-user pt-5-percent">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                    <div class="error">
+                        <span class="alert alert-danger widith-50" *ngIf="authenticationError" jhiTranslate="login.error"></span>
+                    </div>
+                    <form class="form" role="form" (ngSubmit)="login()" [formGroup]="loginForm">
+                        <div class="form-group">
+                            <!--email-->
+                            <div class="row mt-4">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                    <input type="text" class="form-control input-cadastro font-poppins-light" id="email"
+                                           formControlName="username" #username placeholder="{{'login.email' | translate}}"/>
+                                </div>
+                            </div>
+                            <!--senha-->
+                            <div class="row mt-4">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                    <input type="text" class="form-control input-cadastro font-poppins-light" id="senha"
+                                           formControlName="password" placeholder="{{'login.senha' | translate}}"/>
+                                </div>
+                            </div>
+                            <!--Entrar-->
+                            <div class="row mt-4">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 center">
+                                    <button type="submit" class="btn-secondary btn-enviar border-3 rounded text-center font-poppins-medium"
+                                            jhiTranslate="login.entrar">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 pt-5-percent center">
+                    <span jhiTranslate="login.ou">OU</span>
+                </div>
+                <!--login social-->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+                    <!--via facebook-->
+                    <div class="row mt-4">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 centraliza-btn">
+                            <img src="/content/images/facebook.png" alt="" class="icon-facebook"/>
+                            <button type="submit" class="btn-secondary btn-facebook tamanho-btn border-3 rounded text-center font-poppins-medium"
+                                    (click)="socialSignIn('facebook')" jhiTranslate="login.facebook">face</button>
+                        </div>
+                    </div>
+                    <!--via google-->
+                    <div class="row mt-4">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 centraliza-btn">
+                            <img src="/content/images/gmail.png" alt="" class="icon-gmail"/>
+                            <button type="submit" class="btn-secondary btn-google tamanho-btn border-3 rounded text-center font-poppins-medium"
+                                    (click)="socialSignIn('google')" jhiTranslate="login.google">gmail</button>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

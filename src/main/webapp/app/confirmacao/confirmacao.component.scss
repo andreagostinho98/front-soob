@@ -1,0 +1,56 @@
+.title {
+  font-weight: bold;
+  color: #00e091;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.display-flex {
+  display: flex !important;
+}
+
+@media (min-width: 300px) {
+  .texto {
+    font-size: 13.5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .alinha-title {
+    margin-left: -17%;
+  }
+  .texto {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .alinha-title {
+    margin-left: -23%;
+  }
+  .texto {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .alinha-title {
+    margin-left: -33%;
+  }
+  .texto {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .alinha-title {
+    margin-left: -33%;
+  }
+  .texto {
+    font-size: 18px;
+  }
+}
+
+.icon-whats {
+  width: 45px;
+}

@@ -1,0 +1,18 @@
+{
+  "cadastroUsuario": {
+    "usuario": "Usuário",
+    "cadastraSe": "Cadastre-se",
+    "nome": "Nome:",
+    "sobrenome": "Sobrenome:",
+    "genero": "Gênero:",
+    "masculino": "Masculino",
+    "feminino": "Feminino",
+    "dataNascimento": "Data de Nascimento:",
+    "celular": "Celular(WhatsApp):",
+    "email": "E-mail:",
+    "crieSenha": "Crie uma senha:",
+    "confirmeSenha": "Confirme a senha:",
+    "newsletter": "Desejo receber o newsletter da SOOB com novidades, promoções e informativos.",
+    "senhaError": "Senhas incompatíveis."
+  }
+}

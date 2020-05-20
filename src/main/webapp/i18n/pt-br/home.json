@@ -1,0 +1,43 @@
+{
+  "home": {
+    "title": "Bem vindo, Soob",
+    "subtitle": "Esta é a página principal",
+    "levamosParaVoce": "Não se preocupe, a gente leva para você  ; )",
+    "deOnde": "De onde (endereço completo)",
+    "paraOnde": "Para onde (endereço completo)",
+    "pontoParada": "Adicionar um ponto de parada",
+    "pesquisar": "Pesquisar",
+    "logged": {
+      "message": "Você está logado como \"{{username}}\"."
+    },
+    "question": "Em caso de dúvida sobre o JHipster:",
+    "link": {
+      "homepage": "Página principal JHipster",
+      "stackoverflow": "JHipster no Stack Overflow",
+      "bugtracker": "JHipster bug tracker",
+      "chat": "Sala de bate-papo pública JHipster",
+      "follow": "siga @jhipster no Twitter"
+    },
+    "like": "Se você gosta do JHipster, não se esqueça de avaliar no",
+    "github": "GitHub",
+    "modal": {
+      "title": "Será enviado para o seu número de WhatsApp, vários preços de diferentes empresas. Você escolhe a melhor opção!",
+      "digiteNumero": "( ) digite seu número",
+      "enviadaMensagem": "Seguro, simples e rápido!",
+      "termos": "Ao clicar em enviar, você aceita os <b>Termos e Condições</b> do site",
+      "botaoEnviar": "Enviar",
+      "sucessoEmail": "Enviado com sucesso!",
+      "erroEmail": "Erro ao enviar!",
+      "whatsErro": "É necessário informar um número"
+    },
+    "terceiraPagina": {
+      "somosSoob": "#SOMOSSOOB",
+      "duvidas": "Quer tirar dúvidas, mandar sugestões ou fazer uma reclamação ?",
+      "email1": "Mande um e-mail para",
+      "email3": " e entraremos em contato. ;)",
+      "email2": "atendimento@soob.com",
+      "politicas": "Políticas",
+      "termosUso": "Termos de Uso"
+    }
+  }
+}

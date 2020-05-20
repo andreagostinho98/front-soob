@@ -1,0 +1,142 @@
+//@import '~bootstrap/scss/functions';
+//@import '~bootswatch/dist/darkly/variables';
+//@import '~bootstrap/scss/variables';
+//
+///* ==========================================================================
+//Navbar
+//========================================================================== */
+//
+//.navbar-version {
+//  font-size: 0.65em;
+//  color: $navbar-dark-color;
+//}
+//
+//.profile-image {
+//  width: 1.75em;
+//}
+//
+//.navbar {
+//  position: fixed !important;
+//  width: 100vw;
+//  z-index: 3;
+//  top: 0px;
+//  .dropdown-item.active,
+//  .dropdown-item.active:focus,
+//  .dropdown-item.active:hover {
+//    background-color: white !important;
+//  }
+//
+//  ul.navbar-nav {
+//    .nav-item {
+//      margin-left: 0.5em;
+//    }
+//  }
+//
+//  a.nav-link {
+//    font-weight: 400;
+//    color: white;
+//    text-decoration: none;
+//    font-size: 14px;
+//  }
+//
+//  .navbar-toggler {
+//    &:hover {
+//      color: $navbar-dark-hover-color;
+//    }
+//  }
+//}
+//
+///* ==========================================================================
+//Logo styles
+//========================================================================== */
+//.logo-img {
+//  height: 45px;
+//  width: 100px;
+//  display: inline-block;
+//  vertical-align: middle;
+//  background: url('../../../content/images/logo.png') no-repeat center center;
+//  background-size: contain;
+//}
+//.bg-green {
+//  background-color: #00e091 !important;
+//}
+@import '~bootstrap/scss/functions';
+@import '~bootswatch/dist/journal/variables';
+@import '~bootstrap/scss/variables';
+
+/* ==========================================================================
+Navbar
+========================================================================== */
+
+.navbar-version {
+  font-size: 0.65em;
+  color: $navbar-dark-color;
+}
+
+.profile-image {
+  height: 1.75em;
+  width: 1.75em;
+}
+
+.navbar {
+  padding: 0.2rem 1rem;
+  .dropdown-item.active,
+  .dropdown-item.active:focus,
+  .dropdown-item.active:hover {
+    background-color: $dark;
+  }
+
+  ul.navbar-nav {
+    .nav-item {
+      margin-left: 0.5em;
+    }
+  }
+
+  a.nav-link {
+    color: white;
+    font-weight: 400;
+  }
+
+  .navbar-toggler {
+    &:hover {
+      color: $navbar-dark-hover-color;
+    }
+  }
+}
+
+.nav-position {
+  margin-bottom: -26px;
+  width: 100%;
+  position: fixed;
+  margin-top: -3rem !important;
+  z-index: 3;
+}
+
+/* ==========================================================================
+Logo styles
+========================================================================== */
+//.logo-img {
+//  height: 45px;
+//  width: 45px;
+//  display: inline-block;
+//  vertical-align: middle;
+//  background: url('../../../content/images/logo-jhipster.png') no-repeat center center;
+//  background-size: contain;
+//}
+.logo-img {
+  height: 45px;
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url('../../../content/images/logo.png') no-repeat center center;
+  background-size: contain;
+}
+.bg-green {
+  background-color: #00e091 !important;
+}
+
+.btn-entre {
+  background-color: white;
+  border-style: ridge;
+  margin-left: 13%;
+}

@@ -1,0 +1,73 @@
+.container-fluid {
+}
+
+.display-flex {
+  display: flex !important;
+}
+
+@media (min-width: 1180px) {
+  .ajuste-widith-2 {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 1180px) {
+  .ajuste-widith-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.verdeagua {
+  color: #00e091;
+}
+
+.back-verdeagua {
+  background-color: #00e091;
+}
+
+.font-white {
+  color: white;
+}
+
+.text-center-aling {
+  text-align: -webkit-center !important;
+}
+
+.paragraph {
+  white-space: pre-wrap;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.max-widith-10 {
+  max-width: 10%;
+}
+
+.right {
+  text-align: -webkit-right;
+}
+
+.border-none {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.botao-x {
+  color: white;
+}
+
+.aling-last {
+  text-align: center;
+}
+.btn-experimente {
+  background-color: #00e091;
+  color: white;
+  height: 150%;
+}

@@ -1,0 +1,443 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'bootstrap-variables';
+@import '~bootstrap/scss/functions';
+@import '~bootswatch/dist/darkly/variables';
+@import '~bootstrap/scss/variables';
+@import '~primeicons/primeicons.css';
+
+/* ==============================================================
+Bootstrap tweaks
+===============================================================*/
+
+body,
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+
+a:hover {
+  /* make sure browsers use the pointer cursor for anchors, even with no href */
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  color: $dropdown-link-hover-color;
+}
+
+/* ==========================================================================
+Browser Upgrade Prompt
+========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+Generic styles
+========================================================================== */
+
+/* other generic styles */
+
+.jh-card {
+  padding: 0;
+  margin-top: 20px;
+  border: none;
+}
+
+.ui-float-label label {
+  text-indent: 8px;
+}
+
+.error {
+  color: white;
+  background-color: red;
+}
+
+.pad {
+  padding: 10px;
+}
+
+.w-40 {
+  width: 40% !important;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.break {
+  white-space: normal;
+  word-break: break-all;
+}
+
+.readonly {
+  background-color: #eee;
+  opacity: 1;
+}
+
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.hand,
+[jhisortby] {
+  cursor: pointer;
+}
+
+/* ==========================================================================
+Custom alerts for notification
+========================================================================== */
+.alerts {
+  .alert {
+    text-overflow: ellipsis;
+
+    pre {
+      background: none;
+      border: none;
+      font: inherit;
+      color: inherit;
+      padding: 0;
+      margin: 0;
+    }
+
+    .popover pre {
+      font-size: 10px;
+    }
+  }
+
+  .jhi-toast {
+    position: fixed;
+    width: 100%;
+
+    &.left {
+      left: 5px;
+    }
+
+    &.right {
+      right: 5px;
+    }
+
+    &.top {
+      top: 55px;
+    }
+
+    &.bottom {
+      bottom: 55px;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .alerts .jhi-toast {
+    width: 50%;
+  }
+}
+
+/* ==========================================================================
+entity detail page css
+========================================================================== */
+.row.jh-entity-details > {
+  dd {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .row.jh-entity-details > {
+    dt {
+      margin-bottom: 15px;
+    }
+
+    dd {
+      border-bottom: 1px solid #eee;
+      padding-left: 180px;
+      margin-left: 0;
+    }
+  }
+}
+
+/* ==========================================================================
+ui bootstrap tweaks
+========================================================================== */
+.nav,
+.pagination,
+.carousel,
+.panel-title a {
+  cursor: pointer;
+}
+
+.thread-dump-modal-lock {
+  max-width: 450px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container-fluid {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  z-index: 0;
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+#modalPesquisar .ui-inputtext {
+  width: 100% !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-weight: bold;
+}
+
+#mascaraCelular .ui-inputtext {
+  width: 100% !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#dataNascimento .ui-inputtext {
+  width: 100% !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+//inicio p-calendar
+.ui-calendar .ui-datepicker {
+  min-width: 100%;
+}
+
+body .ui-datepicker {
+  padding: 0.857em;
+  min-width: 20em;
+  background-color: #ffffff;
+  color: #333333;
+  border: 4px solid #a6a6a6 !important;
+  text-align-last: center;
+}
+
+.ui-datepicker {
+  width: auto;
+  padding: 0.2em;
+  position: absolute;
+}
+
+table.ui-datepicker-calendar {
+  width: 100%;
+}
+
+body .ui-corner-all {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+body .ui-widget {
+  font-size: 14px;
+  text-decoration: none;
+  border: none;
+  outline-color: white;
+}
+
+.ui-datepicker-header {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.ui-datepicker-prev {
+  padding-right: 5% !important;
+}
+
+.ui-datepicker-next {
+  padding-left: 5% !important;
+}
+
+.ui-datepicker-other-month {
+  color: lightgray;
+}
+
+//fim p-calendar
+
+@media (min-width: 360px) {
+  .modal-dialog {
+    margin: 1.75rem auto;
+    top: 60px !important;
+    max-width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal-dialog {
+    margin: 1.75rem auto;
+    top: 80px !important;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-dialog {
+    margin: 1.75rem auto;
+    top: 70px !important;
+    width: 40%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .modal-dialog {
+    margin: 1.75rem auto;
+    top: 50px !important;
+    width: 45%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .modal-dialog {
+    margin: 1.75rem auto;
+    top: 50px !important;
+    width: 29%;
+  }
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: black;
+}
+
+/* jhipster-needle-scss-add-main JHipster will add new css style */
+
+@font-face {
+  font-family: 'poppinslight';
+  src: url('~app/layouts/fonts/poppins-light-webfont.woff2') format('woff2'),
+    url('~app/layouts/fonts/poppins-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppinsbold';
+  src: url('~app/layouts/fonts/poppins-bold-webfont.woff2') format('woff2'),
+    url('~app/layouts/fonts/poppins-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppinsmedium';
+  src: url('~app/layouts/fonts/poppins-medium-webfont.woff2') format('woff2'),
+    url('~app/layouts/fonts/poppins-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppinsregular';
+  src: url('~app/layouts/fonts/poppins-regular-webfont.woff2') format('woff2'),
+    url('~app/layouts/fonts/poppins-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'alegreya_sansbold';
+  src: url('~app/layouts/fonts/alegreyasans-bold-webfont.woff2') format('woff2'),
+    url('~app/layouts/fonts/alegreyasans-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-poppins-light {
+  font-family: 'poppinslight', sans-serif;
+}
+
+.font-poppins-medium {
+  font-family: 'poppinsmedium', sans-serif;
+}
+
+.font-poppins-regular {
+  font-family: 'poppinsregular', sans-serif;
+}
+
+.font-poppins-bold {
+  font-family: 'poppinsbold', sans-serif;
+}
+
+.font-alegreya-sans-bold {
+  font-family: 'alegreya_sansbold', sans-serif;
+}

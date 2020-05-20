@@ -1,0 +1,14 @@
+{
+  "comoUsar": {
+    "title": "Como funciona?",
+    "subTitle": "Conectamos você com um veículo de carga.",
+    "descricao": "Estamos em Florianópolis com um propósito: \ntornar a sua vida e da sua empresa mais simples e fácil, com a ajuda da tecnologia.",
+    "rodape": "<b>Chama o SOOB!</b>",
+    "encontre": "<b>Encontre</b>",
+    "encontreText": "Use a plataforma para encontrar um SOOB próximo de você e escolha os serviços.",
+    "aguarde": "<b>Aguarde a confirmação</b>",
+    "aguardeText": "Um motorista irá confirmar o seu pedido.",
+    "pronto": "<b>Uhuuu, está pronto!</b>",
+    "prontoText": "Só organizar as coisas para a data e hora escolhida."
+  }
+}

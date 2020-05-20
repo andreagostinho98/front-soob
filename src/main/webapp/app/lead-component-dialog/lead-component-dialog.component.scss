@@ -1,0 +1,34 @@
+.width-10-percent {
+  width: 10% !important;
+}
+
+.box-shadow-none:active,
+.box-shadow-none:focus,
+.box-shadow-none:hover {
+  box-shadow: none !important;
+}
+
+:host ::ng-deep .ui-dialog {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.3) !important;
+}
+
+:host ::ng-deep .ui-dialog .ui-dialog-titlebar {
+  background: #a7d1cf;
+  color: white;
+  font-family: montserrat-bold;
+  text-align: center;
+  font-size: smaller;
+  padding: 0.5em !important;
+}
+
+:host ::ng-deep .ui-dialog .ui-dialog-titlebar-icon {
+  margin: 5px 5px 0 0;
+  color: white !important;
+}
+
+:host ::ng-deep .ui-dialog-footer {
+  background: #a7d1cf;
+  border: none;
+}

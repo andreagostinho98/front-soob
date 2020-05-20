@@ -1,0 +1,371 @@
+.display-flex {
+  display: flex !important;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.fundo-cinza {
+  background-color: #f6f6f6;
+}
+
+.title {
+  color: #00e091;
+}
+
+.input-cadastro {
+  border-radius: 10px;
+  border: none;
+  -webkit-text-fill-color: black;
+}
+
+.font-black {
+  color: black;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #00e091;
+}
+
+.custom-checkbox .custom-control-input ~ .custom-control-label::before {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #00e091;
+}
+
+.checkbox-newsletter {
+  padding-left: 2rem;
+}
+
+.btn-enviar {
+  background-color: #00e091 !important;
+  border: none !important;
+  padding: 5px !important;
+  font-size: 16px;
+}
+
+@media (min-width: 300px) {
+  .alinha-cadastro {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .alinha-cadastro {
+    padding-left: 2.5rem;
+  }
+}
+
+@media (min-width: 300px) {
+  .alinha-btn {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .alinha-btn {
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .cadastro-user {
+    padding-left: 3rem;
+  }
+}
+
+.mb-3-rem-negativo {
+  margin-bottom: -3.5rem;
+}
+
+@media (min-width: 300px) {
+  .label-masculino {
+    margin-top: -11.7%;
+    margin-left: 31.3%;
+    position: absolute;
+  }
+  .radio-masculino {
+    margin-top: -10.7%;
+    margin-left: 27%;
+    position: absolute;
+  }
+  .label-feminino {
+    margin-top: -18.7%;
+    margin-left: 65.3%;
+    position: absolute;
+  }
+  .radio-feminino {
+    margin-top: -17.7%;
+    margin-left: 61%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 400px) {
+  .label-masculino {
+    margin-top: -8.7%;
+    margin-left: 31.3%;
+    position: absolute;
+  }
+  .radio-masculino {
+    margin-top: -8%;
+    margin-left: 27%;
+    position: absolute;
+  }
+  .label-feminino {
+    margin-top: -14.7%;
+    margin-left: 65.3%;
+    position: absolute;
+  }
+  .radio-feminino {
+    margin-top: -13.7%;
+    margin-left: 61%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 500px) {
+  .label-masculino {
+    margin-top: -7.7%;
+    margin-left: 31.3%;
+    position: absolute;
+  }
+  .radio-masculino {
+    margin-top: -7%;
+    margin-left: 27%;
+    position: absolute;
+  }
+  .label-feminino {
+    margin-top: -12%;
+    margin-left: 65.3%;
+    position: absolute;
+  }
+  .radio-feminino {
+    margin-top: -11.6%;
+    margin-left: 61%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 576px) {
+  .label-masculino {
+    margin-top: -6.7%;
+    margin-left: 31.3%;
+    position: absolute;
+  }
+  .radio-masculino {
+    margin-top: -5.7%;
+    margin-left: 27%;
+    position: absolute;
+  }
+  .label-feminino {
+    margin-top: -10.7%;
+    margin-left: 65%;
+    position: absolute;
+  }
+  .radio-feminino {
+    margin-top: -9.7%;
+    margin-left: 61%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 650px) {
+  .label-masculino {
+    margin-top: -5.5%;
+    margin-left: 31.3%;
+    position: absolute;
+  }
+  .radio-masculino {
+    margin-top: -4.7%;
+    margin-left: 27%;
+    position: absolute;
+  }
+  .label-feminino {
+    margin-top: -9.5%;
+    margin-left: 65%;
+    position: absolute;
+  }
+  .radio-feminino {
+    margin-top: -9%;
+    margin-left: 61%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 768px) {
+  .label-masculino {
+    margin-top: -12.4%;
+    margin-left: 31.3%;
+    position: absolute;
+  }
+  .radio-masculino {
+    margin-top: -11.3%;
+    margin-left: 27%;
+    position: absolute;
+  }
+  .label-feminino {
+    margin-top: -20%;
+    margin-left: 65%;
+    position: absolute;
+  }
+  .radio-feminino {
+    margin-top: -18.3%;
+    margin-left: 61%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 900px) {
+  .label-masculino {
+    margin-top: -10.4%;
+    margin-left: 31.3%;
+    position: absolute;
+  }
+  .radio-masculino {
+    margin-top: -9.3%;
+    margin-left: 27%;
+    position: absolute;
+  }
+  .label-feminino {
+    margin-top: -17.4%;
+    margin-left: 65%;
+    position: absolute;
+  }
+  .radio-feminino {
+    margin-top: -16%;
+    margin-left: 61%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1024px) {
+  .label-masculino {
+    margin-top: -9.4%;
+    margin-left: 34%;
+    position: absolute;
+  }
+  .radio-masculino {
+    margin-top: -8.3%;
+    margin-left: 30%;
+    position: absolute;
+  }
+  .label-feminino {
+    margin-top: -15%;
+    margin-left: 65%;
+    position: absolute;
+  }
+  .radio-feminino {
+    margin-top: -14%;
+    margin-left: 61%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1150px) {
+  .label-masculino {
+    margin-top: -7.6%;
+    margin-left: 34%;
+    position: absolute;
+  }
+  .radio-masculino {
+    margin-top: -6.6%;
+    margin-left: 30%;
+    position: absolute;
+  }
+  .label-feminino {
+    margin-top: -12%;
+    margin-left: 65%;
+    position: absolute;
+  }
+  .radio-feminino {
+    margin-top: -11%;
+    margin-left: 61%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1366px) {
+  .label-masculino {
+    margin-top: -7%;
+    margin-left: 32%;
+    position: absolute;
+  }
+  .radio-masculino {
+    margin-top: -6%;
+    margin-left: 29%;
+    position: absolute;
+  }
+  .label-feminino {
+    margin-top: -11%;
+    margin-left: 60%;
+    position: absolute;
+  }
+  .radio-feminino {
+    margin-top: -10%;
+    margin-left: 57%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1600px) {
+  .label-masculino {
+    margin-top: -5.6%;
+    margin-left: 32%;
+    position: absolute;
+  }
+  .radio-masculino {
+    margin-top: -5%;
+    margin-left: 29%;
+    position: absolute;
+  }
+  .label-feminino {
+    margin-top: -9%;
+    margin-left: 60%;
+    position: absolute;
+  }
+  .radio-feminino {
+    margin-top: -8.5%;
+    margin-left: 57%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1900px) {
+  .label-masculino {
+    margin-top: -4.6%;
+    margin-left: 32%;
+    position: absolute;
+  }
+  .radio-masculino {
+    margin-top: -4%;
+    margin-left: 29%;
+    position: absolute;
+  }
+  .label-feminino {
+    margin-top: -7.5%;
+    margin-left: 60%;
+    position: absolute;
+  }
+  .radio-feminino {
+    margin-top: -7%;
+    margin-left: 57%;
+    position: absolute;
+  }
+}
+
+.text-align-last-center {
+  text-align-last: center;
+  width: 100%;
+}
+
+.error {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
